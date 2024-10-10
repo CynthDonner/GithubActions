@@ -84,7 +84,7 @@ jobs:
     - name: Log in to Docker Hub
       # This step logs into your Docker Hub account, which is necessary to push Docker images to your repository.
       # The username and password are stored securely in GitHub Secrets to avoid exposing sensitive data in the code.
-      uses: docker/login-action@v2  # This is a pre-built action to log into Docker Hub.
+      uses: docker/login-action@v2  # Thisis a pre-built action to log into Docker Hub.
       with:
         username: ${{ secrets.DOCKER_USERNAME }}  # Your Docker Hub username stored in GitHub Secrets.
         password: ${{ secrets.DOCKER_PASSWORD }}  # Your Docker Hub password stored in GitHub Secrets.
