@@ -46,5 +46,5 @@ jobs:
 
     - name: Push Docker image to Docker Hub
       if: success()
-      run: docker push CynthDonner/flask_project:latest
+      run: docker push ***/flask_project:latest
 
